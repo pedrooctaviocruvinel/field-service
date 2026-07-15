@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Request_Requires_Due_Date</fullName>
+    <active>true</active>
+    <description>Requires a due date for critical service requests.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Priority__c, &quot;Critical&quot;), ISBLANK(Due_Date__c))</errorConditionFormula>
+    <errorDisplayField>Due_Date__c</errorDisplayField>
+    <errorMessage>Critical requests require a due date.</errorMessage>
+</ValidationRule>

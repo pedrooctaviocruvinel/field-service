@@ -34,6 +34,22 @@
     <layoutAssignments>
         <layout>Service_Request__c-Service Request Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Request__c-Service Request Layout</layout>
+        <recordType>Service_Request__c.Emergency</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Request__c-Service Request Layout</layout>
+        <recordType>Service_Request__c.Inspection</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Request__c-Service Request Layout</layout>
+        <recordType>Service_Request__c.Installation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Request__c-Service Request Layout</layout>
+        <recordType>Service_Request__c.Maintenance</recordType>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -43,6 +59,26 @@
         <object>Service_Request__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Service_Request__c.Emergency</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Service_Request__c.Inspection</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Service_Request__c.Installation</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Service_Request__c.Maintenance</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
